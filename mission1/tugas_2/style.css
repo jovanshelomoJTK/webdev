@@ -1,0 +1,236 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --green: #65d777;
+  --red: #de3f1c;
+  --bg-gray: #f3f4f6;
+  --gray: #949eb2;
+  --med-gray: #778298;
+  --slate: #38404f;
+  --dark-blue: #091836;
+}
+
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 32px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-items > a {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 3em;
+  font-weight: 400;
+  font-family: "Merriweather", serif;
+  padding: 0 15vw;
+  text-align: center;
+}
+
+.title > span {
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.newsletter > p {
+  font-size: 1.3em;
+  text-align: center;
+  padding: 0 10vw;
+}
+
+.newsletter-input-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+
+.newsletter-input {
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 1px 0 rgba(56, 64, 79, 0.3), 0 1px 1px 0 rgba(9, 24, 54, 0.24),
+    0 2px 5px 0 rgba(9, 24, 54, 0.06);
+  border-radius: 2px;
+  overflow: hidden;
+  max-width: 560px;
+  width: 100%;
+}
+
+.newsletter-input > input {
+  flex: 1;
+  font-size: 1em;
+  padding: 16px;
+  border: 0;
+}
+
+.newsletter-input > button {
+  font-weight: 600;
+  font-size: 1em;
+  border: 0px;
+  outline: 0;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  padding: 0 32px;
+}
+
+.features > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 8px;
+}
+
+.container-instructors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.instructor-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.instructor-header > h1 {
+  font-family: "Merriweather", serif;
+  font-size: 2.8em;
+}
+.instructor-header > * {
+  margin: 0;
+}
+
+.container-newsletter-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.container-newsletter {
+  width: 50%;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.container-footer > div {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  font-size: 0.9em;
+}
+
+.container-footer > div > a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 832px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .title {
+    font-size: 1.3em;
+  }
+
+  .newsletter > p {
+    font-size: 1em;
+  }
+
+  .newsletter-input {
+    align-items: stretch;
+    box-sizing: border-box;
+    max-width: unset;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .container-newsletter {
+    width: 100%;
+  }
+}
+
+.bg-gray {
+  background-color: var(--bg-gray);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+.text-med-gray {
+  color: var(--med-gray);
+}
+
+.text-dark-blue {
+  color: var(--dark-blue);
+}
+
+.text-red {
+  color: var(--red);
+}
+
+.text-slate {
+  color: var(--slate);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-black {
+  color: var(--black);
+}
